@@ -1,6 +1,7 @@
 import { RiFileVideoFill } from "react-icons/ri";
 import user from "../assets/user.svg";
 import bodyImage1 from "../assets/bodyImage1.svg";
+import bodyFoot from "../assets/bodyFoot.svg";
 function Body() {
   return (
     <article className="bg-[#F5F3EE] w-full h-screen relative">
@@ -29,7 +30,22 @@ function Body() {
         </div>
         <img className="md:absolute md:top-0" src={bodyImage1} alt="" />
       </div>
+      <section className="relative">
+        <img className="" src={bodyFoot} alt="" />
+        <div className="bg-[#1C4F4A] h-[463px] w-[1440px] top-10 md:top-36 absolute">
+          <p className="font-Inter text-[#F5F3EE] text-center text-[28px] w-1/3 mx-auto ">
+            We are trusted by more than 1.000 Companies worldwide
+          </p>
+          <div className="grid">
+          </div>
+
+        </div>
+      </section>
     </article>
   );
+}
+
+function Logo = () =>{
+
 }
 export default Body;
