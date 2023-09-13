@@ -1,7 +1,14 @@
 import { RiFileVideoFill } from "react-icons/ri";
+import { BsPinterest } from "react-icons/bs";
+import { FaFacebookF } from "react-icons/fa";
+import { BsInstagram } from "react-icons/bs";
+import { BiLogoLinkedin } from "react-icons/bi";
+import { BiLogoYoutube } from "react-icons/bi";
+import { FaDiscord } from "react-icons/fa";
 import user from "../assets/user.svg";
 import bodyImage1 from "../assets/bodyImage1.svg";
 import bodyFoot from "../assets/bodyFoot.svg";
+
 function Body() {
   return (
     <article className="bg-[#F5F3EE] w-full h-screen relative">
@@ -30,22 +37,34 @@ function Body() {
         </div>
         <img className="md:absolute md:top-0" src={bodyImage1} alt="" />
       </div>
-      <section className="relative">
+      <section className="relative md:mt-64">
         <img className="" src={bodyFoot} alt="" />
-        <div className="bg-[#1C4F4A] h-[463px] w-[1440px] top-10 md:top-36 absolute">
-          <p className="font-Inter text-[#F5F3EE] text-center text-[28px] w-1/3 mx-auto ">
-            We are trusted by more than 1.000 Companies worldwide
-          </p>
-          <div className="grid">
+        <div className="bg-[#1C4F4A] h-[463px] w-screen top-10 md:top-36 absolute">
+          <div className="container mx-auto px-5 ">
+            <p className="font-Inter text-[#F5F3EE] text-center text-[28px] md:w-1/2 mx-auto ">
+              We are trusted by more than 1.000 Companies worldwide
+            </p>
+            <div className=" bg-red-600 grid grid-cols-2 md:grid-cols-3 gap-24 items-center justify-between md:mt-10">
+              <Logo img={<BsPinterest />} test="Pinterest" />
+              <Logo img={<BiLogoLinkedin />} test="Linkedln" />
+              <Logo img={<BsInstagram />} test="Instagram" />
+              <Logo img={<FaFacebookF />} test="Facebook" />
+              <Logo img={<BiLogoYoutube />} test="YouTube" />
+              <Logo img={<FaDiscord />} test="Discord" />
+            </div>
           </div>
-
         </div>
       </section>
     </article>
   );
 }
 
-function Logo = () =>{
-
+function Logo(Props) {
+  return (
+    <div className=" text-white bg-blue-400 flex items-center gap-2 text-2xl md:text-4xl max-w-fit">
+      <BsPinterest>({Props.img})</BsPinterest>
+      <p>{Props.test}</p>
+    </div>
+  );
 }
 export default Body;
