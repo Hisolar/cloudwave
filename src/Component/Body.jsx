@@ -9,6 +9,10 @@ import user from "../assets/user.svg";
 import bodyImage1 from "../assets/bodyImage1.svg";
 import bodyFoot from "../assets/bodyFoot.svg";
 
+console.log(FaFacebookF);
+
+const centerLogos = "flex w-full justify-center";
+
 function Body() {
   return (
     <article className="bg-[#F5F3EE] w-full h-screen relative">
@@ -39,18 +43,33 @@ function Body() {
       </div>
       <section className="relative md:mt-64">
         <img className="" src={bodyFoot} alt="" />
-        <div className="bg-[#1C4F4A] h-[463px] w-screen top-10 md:top-36 absolute">
+        <div className="bg-[#1C4F4A] w-full -mt-2 py-10 md:pb-14">
           <div className="container mx-auto px-5 ">
-            <p className="font-Inter text-[#F5F3EE] text-center text-[28px] md:w-1/2 mx-auto ">
+            <p className="font-Inter text-[#F5F3EE] text-center text-[18px] md:text-[32px] md:w-1/2 mx-auto">
               We are trusted by more than 1.000 Companies worldwide
             </p>
-            <div className=" bg-red-600 grid grid-cols-2 md:grid-cols-3 gap-24 items-center justify-between md:mt-10">
-              <Logo img={<BsPinterest />} test="Pinterest" />
-              <Logo img={<BiLogoLinkedin />} test="Linkedln" />
-              <Logo img={<BsInstagram />} test="Instagram" />
-              <Logo img={<FaFacebookF />} test="Facebook" />
-              <Logo img={<BiLogoYoutube />} test="YouTube" />
-              <Logo img={<FaDiscord />} test="Discord" />
+            <div className="grid grid-cols-3 w-full items-center justify-center gap-20 mt-12">
+              <div className={centerLogos}>
+                <Logo img={<BsPinterest />} test="Pinterest" />
+              </div>
+              <div className={centerLogos}>
+                <Logo img={<BiLogoLinkedin />} test="Linkedln" />
+              </div>
+              <div className={centerLogos}>
+                <Logo img={<BsInstagram />} test="Instagram" />
+              </div>
+
+              <div className={centerLogos}>
+                <Logo img={<FaFacebookF />} test="Facebook" />
+              </div>
+
+              <div className={centerLogos}>
+                <Logo img={<BiLogoYoutube />} test="YouTube" />
+              </div>
+
+              <div className={centerLogos}>
+                <Logo img={<FaDiscord />} test="Discord" />
+              </div>
             </div>
           </div>
         </div>
@@ -61,9 +80,9 @@ function Body() {
 
 function Logo(Props) {
   return (
-    <div className=" text-white bg-blue-400 flex items-center gap-2 text-2xl md:text-4xl max-w-fit">
-      <BsPinterest>({Props.img})</BsPinterest>
-      <p>{Props.test}</p>
+    <div className=" text-white flex items-center gap-2 text-2xl md:text-4xl">
+      {Props.img}
+      <p className="hidden md:block">{Props.test}</p>
     </div>
   );
 }
