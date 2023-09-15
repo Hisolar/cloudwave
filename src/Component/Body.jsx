@@ -9,8 +9,6 @@ import user from "../assets/user.svg";
 import bodyImage1 from "../assets/bodyImage1.svg";
 import bodyFoot from "../assets/bodyFoot.svg";
 
-console.log(FaFacebookF);
-
 const centerLogos = "flex w-full justify-center";
 
 function Body() {

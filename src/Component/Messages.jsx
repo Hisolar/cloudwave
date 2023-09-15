@@ -3,7 +3,7 @@ import hw2 from "../assets/hw2.png";
 import hw3 from "../assets/hw3.png";
 function Messages() {
   return (
-    <section className="bg-[#F5F3EE] text-[#1C4F4A] w-screen h-full">
+    <section className="bg-[#F5F3EE] font-Inter text-[#1C4F4A] w-screen h-full">
       <div className="container mx-auto px-5 ">
         <h1 className="text-2xl font-bold text-center">How We Work</h1>
         <div className="md:flex items-center justify-between">
