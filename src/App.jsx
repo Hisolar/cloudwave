@@ -4,6 +4,7 @@ import Header from "./Component/Header";
 import Body from "./Component/Body";
 import Messages from "./Component/Messages";
 import OurTeam from "./Component/OurTeam";
+import Use from "./Component/Use";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <Body />
       <Messages />
       <OurTeam />
+      <Use />
     </div>
   );
 }

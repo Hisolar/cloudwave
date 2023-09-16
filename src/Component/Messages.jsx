@@ -3,9 +3,11 @@ import hw2 from "../assets/hw2.png";
 import hw3 from "../assets/hw3.png";
 function Messages() {
   return (
-    <section className="bg-[#F5F3EE] font-Inter text-[#1C4F4A] w-screen h-full">
+    <section className="bg-[#F5F3EE] font-Inter text-[#1C4F4A] w-screen h-full md:pt-96">
       <div className="container mx-auto px-5 ">
-        <h1 className="text-2xl font-bold text-center">How We Work</h1>
+        <h1 className="text-2xl md:text-4xl font-bold text-center">
+          How We Work
+        </h1>
         <div className="md:flex items-center justify-between">
           <div className="flex flex-col gap-2 py-3">
             <h1 className="text-xl md:text-4xl font-bold">Get started</h1>
