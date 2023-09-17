@@ -3,9 +3,9 @@ import deckimage from "../assets/deckimage.png";
 import next from "../assets/next.png";
 function Use() {
   return (
-    <section className="bg-[#F5F3EE] font-Inter text-[#1C4F4A] w-screen h-screen">
+    <section className="bg-[#F5F3EE] font-Inter text-[#1C4F4A] w-screen min-h-min">
       <div className="container mx-auto px-5">
-        <h1 className="text-center font-Inter font-bold text-2xl md:text-4xl py-14">
+        <h1 className="text-center font-Inter font-bold text-2xl md:text-4xl md:py-14 py-8">
           4 Reasons To Use CloudWave
         </h1>
 
@@ -31,7 +31,7 @@ function Use() {
           </div>
         </div>
 
-        <div className="flex flex-col items-center justify-center py-36">
+        <div className="flex flex-col items-center justify-center pt-28 md:pt-36">
           <img src={next} alt="" />
           <div className="bg-[#1C4F4A] w-40 h-12 my-5 rounded-lg">
             <h1 className="text-white text-center flex justify-center items-center h-full">

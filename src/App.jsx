@@ -5,6 +5,7 @@ import Body from "./Component/Body";
 import Messages from "./Component/Messages";
 import OurTeam from "./Component/OurTeam";
 import Use from "./Component/Use";
+import Recommendation from "./Component/Recommendation";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <Messages />
       <OurTeam />
       <Use />
+      <Recommendation />
     </div>
   );
 }
