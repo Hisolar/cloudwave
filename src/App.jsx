@@ -6,6 +6,8 @@ import Messages from "./Component/Messages";
 import OurTeam from "./Component/OurTeam";
 import Use from "./Component/Use";
 import Recommendation from "./Component/Recommendation";
+import Blog from "./Component/Blog";
+import Digital from "./Component/Digital";
 
 function App() {
   return (
@@ -16,6 +18,8 @@ function App() {
       <OurTeam />
       <Use />
       <Recommendation />
+      <Blog />
+      <Digital />
     </div>
   );
 }

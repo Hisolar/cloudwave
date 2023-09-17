@@ -10,7 +10,13 @@ function Recommendation() {
         </h1>
         <div className="recBg">
           <div className="md:flex gap-10 items-center justify-center px-6 py-8 md:px-10 md:py-20">
-            <img src={recImage} alt="" />
+            <div className="w-full">
+              <img src={recImage} alt="" />
+              <p className="text-white pb-5 md:pl-7">
+                John Doe, CEO of <br /> TechWorld Solutions
+              </p>
+            </div>
+
             <p className="md:text-xl text-white md:pr-40 text-justify">
               "I couldn't believe the transformative impact CloudWave had on our
               business! With their cutting-edge software, we streamlined our
