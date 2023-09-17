@@ -11,7 +11,7 @@ function Footer() {
       <footer className="container mx-auto px-5">
         <div className="grid  md:grid-cols-2 gap-8 justify-between">
           <img className="md:w-[300px]" src={cwLogo} alt="" />
-          <div className="block md:hidden flex items-center gap-4 text-4xl">
+          <div className="block md:hidden flex items-center gap-4 text-2xl">
             <FaFacebookF />
             <BsInstagram />
             <BiLogoLinkedin />
