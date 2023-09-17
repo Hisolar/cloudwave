@@ -8,6 +8,7 @@ import Use from "./Component/Use";
 import Recommendation from "./Component/Recommendation";
 import Blog from "./Component/Blog";
 import Digital from "./Component/Digital";
+import Footer from "./Component/Footer";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
       <Recommendation />
       <Blog />
       <Digital />
+      <Footer />
     </div>
   );
 }
